@@ -71,6 +71,7 @@
   "engines": {
     "node": ">=20"
   },
+  "packageManager": "pnpm@10.34.7",
   "pnpm": {
     "overrides": {
       "undici@>=7.0.0 <7.29.1": ">=7.29.1 <8",
