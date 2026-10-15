@@ -10,8 +10,8 @@ import Markdown from 'unplugin-vue-markdown/vite'
 import Prism from 'markdown-it-prism'
 import LinkAttributes from 'markdown-it-link-attributes'
 import anchor from 'markdown-it-anchor'
-import string from 'string'
 import { generateI18nSitemap } from './scripts/generate-i18n-sitemap'
+import { slugify } from './scripts/slugify'
 import PrismLib from 'prismjs'
 
 
@@ -109,7 +109,7 @@ export default defineConfig(({ mode }) => {
           PrismLib.languages.output = PrismLib.languages.plaintext
 
           md.use(anchor, {
-            slugify: (s: string) => string(s).slugify().toString(),
+            slugify,
           })
           md.use(Prism, {})
           md.use(LinkAttributes, {
