@@ -45,7 +45,7 @@
     "esno": "^4.8.0",
     "fs-extra": "^11.3.2",
     "globals": "^16.5.0",
-    "happy-dom": "^20.14.6",
+    "happy-dom": "^21.0.4",
     "markdown-it": "^14.3.3",
     "markdown-it-anchor": "^9.2.0",
     "markdown-it-link-attributes": "^4.0.1",
